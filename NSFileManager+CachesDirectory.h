@@ -6,8 +6,10 @@
 //
 //
 
+#import <Foundation/Foundation.h>
+
 @interface NSFileManager (CachesDirectory)
 
-- (NSString *)applicationCachesDirectory;
++ (NSString *)applicationCachesDirectory;
 
 @end

@@ -11,7 +11,7 @@
 @implementation NSFileManager (CachesDirectory)
 
 #pragma mark - Caches Directory Helper
-- (NSString *)applicationCachesDirectory {
++ (NSString *)applicationCachesDirectory {
   NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
   NSString *cachePath = [paths objectAtIndex:0];
   BOOL isDir = NO;
